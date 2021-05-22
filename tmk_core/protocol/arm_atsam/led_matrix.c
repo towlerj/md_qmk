@@ -355,6 +355,7 @@ void led_matrix_indicators(void)
 #ifdef USE_MASSDROP_CONFIGURATOR
 static void md_led_matrix_indicators(void)
 {
+
     uint8_t kbled = keyboard_leds();
     if (/*kbled &&*/ rgb_matrix_config.enable)
     {

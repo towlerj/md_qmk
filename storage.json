@@ -1,0 +1,25 @@
+{
+    "telemetry.machineId": "fa9d46f514c81e0857c3bfdac95a63e490e778a8c31a1e19bbe88cb268f5bfaf",
+    "openedPathsList": {
+        "workspaces3": [
+            "file:///c%3A/msys64/home/Jonatha/drop-qmk/qmk_firmware"
+        ],
+        "files2": []
+    },
+    "theme": "vs-dark",
+    "themeBackground": "#1e1e1e",
+    "windowsState": {
+        "lastActiveWindow": {
+            "folder": "file:///c%3A/msys64/home/Jonatha/drop-qmk/qmk_firmware",
+            "backupPath": "C:\\msys64\\home\\Jonatha\\drop-qmk\\qmk_firmware\\Backups\\b6b30fd252a11c0517721af5df8c0713",
+            "uiState": {
+                "mode": 1,
+                "x": 1024,
+                "y": 480,
+                "width": 1407,
+                "height": 1000
+            }
+        },
+        "openedWindows": []
+    }
+}

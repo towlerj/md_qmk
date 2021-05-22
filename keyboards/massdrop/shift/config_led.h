@@ -43,7 +43,7 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 #endif
 
 //Default Global Current Register value (Default brightness 0 - 255)
-#define ISSI3733_GCR_DEFAULT LED_GCR_MAX
+#define ISSI3733_GCR_DEFAULT 80
 
 //Automatic power rollback and recovery
 //#define V5_HIGH                     2494        //5V high level = 4.75V (After low power detect, point at which LEDs are allowed to use more power )
@@ -238,16 +238,16 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
  { .id = 169, .x = 11.537, .y = 4.383, .adr = { .drv = 2, .cs = 3,  .swr = 5,  .swg = 4,  .swb = 6  }, .scan = 253 } \
 };
 
-//#define USB_LED_INDICATOR_ENABLE    //Comment out to disable indicator functionality
+#define USB_LED_INDICATOR_ENABLE    //Comment out to disable indicator functionality
 #ifdef USB_LED_INDICATOR_ENABLE     //Scan codes refer to actual key matrix codes, not KC_*
     #define USB_LED_NUM_LOCK_SCANCODE       41
     #define USB_LED_CAPS_LOCK_SCANCODE      48
-    //#define USB_LED_SCROLL_LOCK_SCANCODE    255
+    #define USB_LED_SCROLL_LOCK_SCANCODE    47
     //#define USB_LED_COMPOSE_SCANCODE        255
     //#define USB_LED_KANA_SCANCODE           255
 #endif //USB_LED_INDICATOR_ENABLE
 
-#define DEDICATED_LED_INDICATOR_ENABLE
+//#define DEDICATED_LED_INDICATOR_ENABLE
 #ifdef DEDICATED_LED_INDICATOR_ENABLE     // LEDID refers to .id field in struct above
     #define USB_LED_NUM_LOCK_LEDID       167
     #define USB_LED_CAPS_LOCK_LEDID      168
